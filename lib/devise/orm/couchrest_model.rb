@@ -20,10 +20,12 @@ module Devise
           # @authentication_keys.each do |key_name|
           #   view key_name
           # end
-          view :by_confirmation_token
-          view :by_authentication_token
-          view :by_reset_password_token
-          view :by_unlock_token
+          design do
+            view :by_confirmation_token
+            view :by_authentication_token
+            view :by_reset_password_token
+            view :by_unlock_token
+          end
         end
       end
     end
