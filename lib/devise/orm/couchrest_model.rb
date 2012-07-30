@@ -17,9 +17,9 @@ module Devise
 
         private
         def create_authentication_views
-          # @authentication_keys.each do |key_name|
-          #   view key_name
-          # end
+          @authentication_keys.each do |key_name|
+            view 'by_' + key_name
+          end
           design do
             view :by_confirmation_token
             view :by_authentication_token
