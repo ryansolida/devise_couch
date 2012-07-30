@@ -17,13 +17,13 @@ module Devise
 
         private
         def create_authentication_views
-          authentication_keys.each do |key_name|
-            view_by key_name
-          end
-          view_by :confirmation_token
-          view_by :authentication_token
-          view_by :reset_password_token
-          view_by :unlock_token
+          # @authentication_keys.each do |key_name|
+          #   view key_name
+          # end
+          view :by_confirmation_token
+          view :by_authentication_token
+          view :by_reset_password_token
+          view :by_unlock_token
         end
       end
     end
