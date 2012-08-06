@@ -1,11 +1,7 @@
-# require 'devise_couch'
-# require 'devise/orm/couchrest_model/schema'
-# require 'devise/orm/couchrest_model/date_time'
-# require 'orm_adapter/adapters/couchrest_model'
-# require 'devise/hooks/activatable'
-# require 'devise/strategies/database_authenticatable'
-# require 'orm_adapter/to_adapter'
-# require 'orm_adapter/base'
+require 'devise_couch'
+require 'devise/orm/couchrest_model/schema'
+require 'devise/orm/couchrest_model/date_time'
+require 'orm_adapter/adapters/couchrest_model'
 
 module Devise
   module Orm
