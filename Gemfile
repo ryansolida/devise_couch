@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'orm_adapter', :git => 'git@github.com:trey-jones/orm_adapter.git'
+gem 'orm_adapter', :git => 'git://github.com/trey-jones/orm_adapter.git'
 gem 'oa-oauth', :require => "omniauth/oauth"
 gem 'oa-openid', :require => "omniauth/openid"
 
