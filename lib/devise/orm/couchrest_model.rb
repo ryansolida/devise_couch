@@ -2,6 +2,10 @@ require 'devise_couch'
 require 'devise/orm/couchrest_model/schema'
 require 'devise/orm/couchrest_model/date_time'
 require 'orm_adapter/adapters/couchrest_model'
+require 'devise/hooks/activatable'
+require 'devise/strategies/database_authenticatable'
+require 'orm_adapter/to_adapter'
+require 'orm_adapter/base'
 
 module Devise
   module Orm
@@ -19,7 +23,6 @@ module Devise
         def create_authentication_views
 
           design do
-            view :by_email  # hardcoded the default devise key  TODO tj replace the old block for authentication keys
             view :by_confirmation_token
             view :by_authentication_token
             view :by_reset_password_token
